@@ -4,12 +4,13 @@ NEWSCHEMA('Product').make(function(schema) {
 	schema.define('pictures', '[String]');
 	schema.define('reference', 'String(20)');
 	schema.define('category', 'String(300)', true);
-	schema.define('manufacturer', 'String(50)');
+	schema.define('manufacturer', 'String(50)'); // is actually department/organization
 	schema.define('name', 'String(50)', true);
-	schema.define('price', Number, true);
-	schema.define('priceold', Number);
+	schema.define('price', Number, true); // is actually hours per week
+	schema.define('rating', Number);
+//	schema.define('priceold', Number);
 	schema.define('description', String, true);
-	schema.define('availability', 'String(40)');
+//	schema.define('availability', 'String(40)');
 	schema.define('template', 'String(30)');
 	schema.define('body', String);
 	schema.define('pictures2', '[String]');

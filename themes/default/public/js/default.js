@@ -203,7 +203,7 @@ COMPONENT('checkout', function() {
 
 		var cart = CACHE('cart');
 		if (!cart || !cart.length) {
-			self.html(currency.format('0.00'));
+			self.html(('0 hrs/week'));
 			return;
 		}
 
@@ -215,7 +215,7 @@ COMPONENT('checkout', function() {
 			count += cart[i].count;
 		}
 
-		self.html(currency.format(sum.format(2)));
+		self.html((sum + " hrs/week"));
 	};
 });
 

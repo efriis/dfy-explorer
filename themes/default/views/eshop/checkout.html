@@ -10,12 +10,12 @@
 			<div class="col-md-8 col-md-offset-2 ui-center">
 				<hr />
 				<br />
-				<div>@(Your shopping cart is empty, <b>try to visit this page later</b>.)</div>
+				<div>@(You haven't selected any activities yet. <b>Try to visit this page later</b>.)</div>
 				<br />
 				<hr />
 				<br />
 				<br />
-				<a href="@{sitemap_url('products')}" class="linkbutton"><span class="fa fa-search"></span> @(Browse all products)</a>
+				<a href="@{sitemap_url('products')}" class="linkbutton"><span class="fa fa-search"></span> @(Browse all activities)</a>
 				<br />
 				<br />
 			</div>
@@ -29,19 +29,15 @@
 				<table class="table table-bordered checkoutlist" border="0">
 					<thead class="hidden-xs">
 						<tr>
-							<th class="ui-center">@(Item name)</th>
-							<th class="ui-center hidden-xs">@(Price)</th>
-							<th class="ui-center">@(Count)</th>
-							<th class="ui-center">@(Total)</th>
+							<th class="ui-center">@(Activity name)</th>
+							<th class="ui-center hidden-xs">@(Time)</th>
 						</tr>
 					</thead>
 					<tbody data-jc="repeater" data-jc-path="datasource">
 						<script type="text/html">
 							<tr>
 								<td><a href="{{ linker }}">{{ name }}</a><div class="visible-xs fs11 mt10">@(One piece:) @{currency('{{ price | format(2) }}')}</div></td>
-								<td class="ui-right col-xs-2">@{currency('{{ price | format(2) }}')}</td>
-								<td class="ui-right col-xs-2 col-sm-1 active"><input type="text" value="{{ count }}" data-id="{{ id }}" maxlength="2" /></td>
-								<td class="ui-right col-xs-3 col-sm-2 b warning"><span class="visible-xs checkoutlist-label">@(Together:)</span><span class="checkoutlist-item-price" data-format="@{currency('{0}')}">@{currency('{{ price | sum(2) }}')}</span><span class="fa fa-times-circle hidden-xs" data-id="{{ id }}"></span></td>
+								<td class="ui-right col-xs-2">@{('{{ price | format(1) }}')} hrs/week</td>
 							</tr>
 						</script>
 					</tbody>
@@ -49,9 +45,7 @@
 						<script type="text/html">
 							<tr class="active">
 								<td class="b black">@(Summarize)</td>
-								<td class="col-xs-2"></td>
-								<td class="ui-center col-xs-2 col-sm-1 b black">{{ count }}x</td>
-								<td class="ui-right col-xs-3 col-sm-2 b black">@{currency('{{ price | format(2) }}')}<span class="fa fa-calculator hidden-xs"></span></td>
+								<td class="ui-right col-xs-3 col-sm-2 b black">@{('{{ price | format(1) }}')} hrs/week<span class="fa fa-calculator hidden-xs"></span></td>
 							</tr>
 						</script>
 					</tfoot>

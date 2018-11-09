@@ -26,10 +26,10 @@
 	<div data-jc="grid" data-jc-path="products.grid" data-pagination-path="products.filter.page" data-jc-id="products.grid" data-max="auto" data-page="@(Page: #)" data-pages="@(# pages,# page,# pages,# pages)" data-items="@(# items,# item,# items,# items)" data-empty="@(Database does not contain any data.)">
 		<script type="text/html">
 		<tr>
-			<td>{{ if pictures && pictures.length }}<span class="fa fa-photo mr5"></span>{{ fi }}{{ if istop }}<b class="badge badge-red mr5">@(TOP)</b>{{ fi }}{{ if isnew }}<b class="badge badge-blue mr5">@(NEWS)</b>{{ fi }}{{ name }}</td>
+			<td>{{ if pictures && pictures.length }}<span class="fa fa-photo mr5"></span>{{ fi }}{{ if istop }}<b class="badge badge-red mr5">@(TOP)</b>{{ fi }}{{ if isnew }}<b class="badge badge-blue mr5">@(FEAT)</b>{{ fi }}{{ name }}</td>
 			<td style="width:200px" class="silver hidden-xs">{{ if manufacturer }}<span class="fa fa-building"></span> {{ manufacturer }}{{ fi }}</td>
 			<td style="width:250px" class="silver hidden-xs"><span class="fa fa-folder"></span> {{ category }}</td>
-			<td style="width:100px" class="ui-right active">{{ price | price(2) }}</td>
+			<td style="width:100px" class="ui-right active">{{ price }} hrs/week</td>
 			<td style="width:80px" class="ui-right">
 				<button name="edit" title="@(Edit)"><span class="fa fa-pencil"></span></button>
 				<button name="remove" title="@(Remove)"><span class="fa fa-times"></span></button>
@@ -125,24 +125,18 @@
 			<div class="col-md-8 m">
 				<div class="row">
 					<div class="col-md-3 col-sm-6 m">
-						<div data-jc="textbox" data-jc-path="products.form.price" data-required="true" data-align="center" data-jc-type="currency" data-increment="true" data-icon="fa-credit-card" data-maxlength="8">@(Price)</div>
+						<div data-jc="textbox" data-jc-path="products.form.price" data-align="center" data-jc-type="number" data-increment="true"data-maxlength="8">@(Hours/week)</div>
 					</div>
 					<div class="col-md-3 col-sm-6 m">
-						<div data-jc="textbox" data-jc-path="products.form.priceold" data-align="center" data-jc-type="currency" data-increment="true"data-maxlength="8">@(Old price)</div>
-					</div>
-					<div class="col-md-3 col-sm-6 m">
-						<div data-jc="textbox" data-jc-path="products.form.reference" data-align="center" data-maxlength="20" data-icon="fa-braille">@(Custom code)</div>
-					</div>
-					<div class="col-md-3 col-sm-6 m">
-						<div data-jc="textbox" data-jc-path="products.form.availability" data-align="center" data-icon="fa-truck" data-maxlength="40" data-placeholder="@(In stock)">@(Availability)</div>
+						<div data-jc="textbox" data-jc-path="products.form.rating" data-required="true" data-align="center" data-jc-type="number" data-increment="true" data-icon="fa-star" data-maxlength="8">@(Rating)</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 m">
-						<div data-jc="dropdown" data-jc-path="products.form.manufacturer" data-source="products.manufacturers" data-empty="" data-source-value="name">@(Existing manufacturer)</div>
+					<div class="col-md-3 col-sm-6 m">
+						<div data-jc="dropdown" data-jc-path="products.form.manufacturer" data-source="products.manufacturers" data-empty="" data-source-value="name">@(Existing Dept./Org.)</div>
 					</div>
-					<div class="col-md-6">
-						<div data-jc="textbox" data-jc-path="products.form.manufacturer" data-maxlength="50" data-placeholder="@(Type a manufacturer)">@(Manufacturer)</div>
+					<div class="col-md-3 col-sm-6 m">
+						<div data-jc="textbox" data-jc-path="products.form.manufacturer" data-maxlength="50" data-placeholder="@(Type a Department/Organization)">@(Department/Organization)</div>
 					</div>
 				</div>
 			</div>

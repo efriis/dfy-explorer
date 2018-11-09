@@ -1,0 +1,89 @@
+<div class="CMS_widgets">	
+	<div class="CMS_template CMS_remove" data-id="16112622040001lxw1">		
+		<div class="content-specification">			
+			<div class="CMS_repeat">				
+				<div class="content-specification-title CMS_edit">
+					Specifications
+				</div>				
+				<div class="content-specification-keyvalue CMS_repeat">					
+					<div class="key CMS_edit">
+						Dimensions
+					</div>					
+					<div class="value CMS_edit">
+						2" H x 7.1" W x 2.3" D (1.5 lbs)
+					</div>					
+				</div>				
+				<div class="content-specification-keyvalue CMS_repeat CMS_remove">					
+					<div class="key CMS_edit">
+						Charging cradle
+					</div>					
+					<div class="value CMS_edit">
+						0.63" H x 6.2" W x 2" D (2.8 oz)
+					</div>					
+				</div>				
+				<div class="content-specification-keyvalue CMS_repeat CMS_remove">					
+					<div class="key CMS_edit">
+						Wall charger
+					</div>					
+					<div class="value CMS_edit">
+						2.65" H x 1.9" W x 0.6" D
+					</div>					
+				</div>				
+				<div class="content-specification-keyvalue CMS_repeat CMS_remove">					
+					<div class="key CMS_edit">
+						Cable
+					</div>					
+					<div class="value CMS_edit">
+						39.4" L
+					</div>					
+				</div>				
+			</div>			
+		</div>		
+	</div>	
+	<div class="CMS_template CMS_remove" data-id="16112622130001lxw1">		
+		<div class="content-empty">			
+		</div>		
+	</div>	
+	<div class="CMS_template CMS_remove" data-id="16112622070001lxw1">		
+		<div class="content-textleft">			
+			<div class="row">				
+				<div class="col-md-6">
+					<img src="/download/1611262213T8ymlp.jpg" class="img-responsive CMS_edit CMS_remove" alt="" border="0">
+				</div>				
+				<div class="col-md-6 m">					
+					<div class="CMS_repeat">
+						<h2 class="CMS_edit CMS_remove">Lorem ipsum dolor</h2><p class="CMS_edit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, magni? Tempora sunt debitis ullam sequi, inventore maiores ea nihil impedit distinctio quas. Cupiditate, in, rem!</p>
+					</div>					
+				</div>				
+			</div>			
+		</div>		
+	</div>	
+	<div class="CMS_template CMS_remove" data-id="16112622060003lxw1">		
+		<div class="content-textright">			
+			<div class="row">				
+				<div class="col-md-6 m">					
+					<div class="CMS_repeat">
+						<h2 class="CMS_edit CMS_remove">Lorem ipsum dolor</h2><p class="CMS_edit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, magni? Tempora sunt debitis ullam sequi, inventore maiores ea nihil impedit distinctio quas. Cupiditate, in, rem!</p>
+					</div>					
+				</div>				
+				<div class="col-md-6">
+					<img src="/download/1611262213Tud85u.jpg" class="img-responsive CMS_edit CMS_remove" alt="" border="0">
+				</div>				
+			</div>			
+		</div>		
+	</div>	
+	<div class="CMS_template CMS_remove" data-id="16112622070002lxw0">		
+		<div class="content-textcenter">			
+			<div class="row">				
+				<div class="col-md-6 col-md-offset-3 m">					
+					<div class="CMS_repeat">
+						<h2 class="CMS_edit CMS_remove">Lorem ipsum dolor</h2><p class="CMS_edit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, magni? Tempora sunt debitis ullam sequi, inventore maiores ea nihil impedit distinctio quas. Cupiditate, in, rem!</p>
+					</div>					
+				</div>				
+			</div>			
+		</div>		
+		<div class="content-textcenter-image">
+			<img src="/download/1611262212T18fx5.jpg" class="img-responsive CMS_edit" alt="" border="0">
+		</div>		
+	</div>	
+</div>
